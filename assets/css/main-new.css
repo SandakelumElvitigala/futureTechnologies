@@ -1,0 +1,550 @@
+/* base */
+/*COLORS*/
+/* Buttons */
+/*------------------------------------------
+	Mixins --- Media Query Management
+------------------------------------------*/
+/*Resets*/
+/*General*/
+ul {
+  list-style: none; }
+
+/*Bootstrap*/
+.container-fluid {
+  padding: 0 !important; }
+
+.col-xs-12 {
+  padding: 0 !important; }
+
+/* Jquery Ui Slider */
+.ui-widget-content {
+  background: #ff9400;
+  border: none; }
+
+.ui-widget-header {
+  background: #1c1c1c;
+  border: 1px solid #ff9400; }
+
+@media only screen and (min-width: 970px) {
+  .ui-widget-header {
+    background: #4b4a48; } }
+.ui-widget.ui-widget-content {
+  border: none; }
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button, html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  background: #ff9400;
+  border: none;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+/* Bootstrap --- Pagintaion */
+.pagination {
+  width: 100% !important;
+  float: left !important;
+  text-align: center !important; }
+  .pagination > li {
+    display: inline-block !important; }
+
+.pagination > li > a, .pagination > li > span {
+  background: none !important;
+  color: #ff9400 !important;
+  border: none !important; }
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  background: #ff9400 !important;
+  border: none !important;
+  color: #FFF !important; }
+
+/* Modals */
+/* Modal Base --- Quotation List */
+.ty-modal-quotationList-wrap {
+  width: 100%;
+  float: left; }
+  .ty-modal-quotationList-wrap .ty-modal-title {
+    color: #FFF;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    width: 100%;
+    float: left; }
+  .ty-modal-quotationList-wrap .ty-modal-checkout-overview {
+    width: 100%;
+    float: left;
+    margin-bottom: 1rem;
+    margin-top: 5rem; }
+    .ty-modal-quotationList-wrap .ty-modal-checkout-overview span {
+      opacity: 0.2;
+      font-size: 1.8rem;
+      font-weight: normal; }
+      .ty-modal-quotationList-wrap .ty-modal-checkout-overview span.active {
+        opacity: 1;
+        color: #ff9400; }
+        .ty-modal-quotationList-wrap .ty-modal-checkout-overview span.active:after {
+          opacity: 0.2;
+          color: #FFF; }
+      @media (min-width: 960px) {
+        .ty-modal-quotationList-wrap .ty-modal-checkout-overview span {
+          font-size: 2.5rem; } }
+      .ty-modal-quotationList-wrap .ty-modal-checkout-overview span:after {
+        content: "\f105";
+        font-family: "FontAwesome";
+        margin-right: 0.8rem;
+        margin-left: 1rem; }
+        @media (min-width: 768px) {
+          .ty-modal-quotationList-wrap .ty-modal-checkout-overview span:after {
+            margin-right: 1.5rem;
+            margin-left: 2rem; } }
+      .ty-modal-quotationList-wrap .ty-modal-checkout-overview span:last-of-type:after {
+        display: none; }
+
+@media only screen and (min-width: 970px) {
+  .ty-modal-quotationList-wrap .ty-modal-title h1 {
+    font-size: 4em; } }
+.ty-modal-quotationList {
+  width: 100%;
+  float: left; }
+  .ty-modal-quotationList ul {
+    width: 100%;
+    float: left; }
+  .ty-modal-quotationList .ty-empty-msg {
+    width: 100%;
+    float: left; }
+    .ty-modal-quotationList .ty-empty-msg i {
+      color: #4b4a48;
+      font-size: 15rem;
+      opacity: 0.5;
+      position: relative;
+      margin-left: -15px; }
+      @media (min-width: 960px) {
+        .ty-modal-quotationList .ty-empty-msg i {
+          font-size: 20rem; } }
+      .ty-modal-quotationList .ty-empty-msg i:after {
+        content: "\f071";
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #000;
+        font-size: 4rem;
+        -webkit-transform: translate(-16%, -80%);
+        -moz-transform: translate(-16%, -80%);
+        -ms-transform: translate(-16%, -80%);
+        -o-transform: translate(-16%, -80%);
+        transform: translate(-16%, -80%); }
+        @media (min-width: 960px) {
+          .ty-modal-quotationList .ty-empty-msg i:after {
+            font-size: 6rem; } }
+    .ty-modal-quotationList .ty-empty-msg h4 {
+      color: #4b4a48;
+      font-weight: bold;
+      font-size: 2rem; }
+      @media (min-width: 960px) {
+        .ty-modal-quotationList .ty-empty-msg h4 {
+          font-size: 4rem; } }
+
+/* Quotation List Item */
+.ty-modal-quotationList-item {
+  width: 100%;
+  float: left;
+  border-bottom: 2px solid #4b4a48; }
+  .ty-modal-quotationList-item:first-of-type {
+    border-top: 2px solid #4b4a48; }
+  .ty-modal-quotationList-item .ty-titleWrap {
+    width: 100%;
+    float: left; }
+    .ty-modal-quotationList-item .ty-titleWrap h1 {
+      color: #FFF;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .ty-modal-quotationList-item .ty-titleWrap h5 {
+      color: #000;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      border-color: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 0.5rem 0; }
+      @media (min-width: 960px) {
+        .ty-modal-quotationList-item .ty-titleWrap h5 {
+          border: none; } }
+
+@media only screen and (min-width: 970px) {
+  .ty-modal-quotationList-item {
+    padding: 20px 10px; }
+    .ty-modal-quotationList-item .ty-titleWrap {
+      float: left;
+      text-align: left;
+      margin-left: 20px;
+      display: block;
+      width: 300px; }
+      .ty-modal-quotationList-item .ty-titleWrap h1 {
+        margin: 0; } }
+@media only screen and (min-width: 1170px) {
+  .ty-modal-quotationList-item .ty-titleWrap {
+    width: 500px; } }
+/* Quotation List - Qty - Price - Remove Btn - Wrapper */
+.ty-qty-price-removeBtn-wrap {
+  width: 100%;
+  float: left; }
+
+@media only screen and (min-width: 970px) {
+  .ty-qty-price-removeBtn-wrap {
+    width: auto;
+    float: right; } }
+/* Quotation List --- Qty */
+.ty-modal-quotationList-item .ty-quoteQtyWrap .ty-qty-btn {
+  color: #4b4a48; }
+.ty-modal-quotationList-item .ty-quoteQtyWrap .ty-qty-inputHolder span {
+  color: #4b4a48; }
+.ty-modal-quotationList-item .ty-quoteQtyWrap .ty-qty-inputHolder input {
+  color: #4b4a48;
+  border-color: #4b4a48; }
+
+@media only screen and (min-width: 970px) {
+  .ty-modal-quotationList-item .ty-quoteQtyWrap {
+    width: auto;
+    float: left; }
+    .ty-modal-quotationList-item .ty-quoteQtyWrap .ty-qty-inputHolder span {
+      display: none; } }
+/* Quotation List --- Price */
+.ty-modal-quotationList-item .ty-quotationList-PriceWrap {
+  width: 100%;
+  float: left; }
+  .ty-modal-quotationList-item .ty-quotationList-PriceWrap .ty-quotePrice {
+    width: 100%;
+    float: left; }
+    .ty-modal-quotationList-item .ty-quotationList-PriceWrap .ty-quotePrice span.ty-quotePrice-full, .ty-modal-quotationList-item .ty-quotationList-PriceWrap .ty-quotePrice span.ty-quotePrice-single {
+      width: 100%;
+      float: left;
+      color: #FFF; }
+    .ty-modal-quotationList-item .ty-quotationList-PriceWrap .ty-quotePrice span.ty-quotePrice-full {
+      font-size: 2.5em;
+      font-weight: bold; }
+      .ty-modal-quotationList-item .ty-quotationList-PriceWrap .ty-quotePrice span.ty-quotePrice-full:after {
+        content: "LKR";
+        margin-left: 5px; }
+    .ty-modal-quotationList-item .ty-quotationList-PriceWrap .ty-quotePrice span.ty-quotePrice-single {
+      opacity: 0.6; }
+      .ty-modal-quotationList-item .ty-quotationList-PriceWrap .ty-quotePrice span.ty-quotePrice-single span.ty-quote-singlePrice:after {
+        content: "LKR";
+        margin-left: 5px; }
+
+@media only screen and (min-width: 970px) {
+  .ty-modal-quotationList-item .ty-quotationList-PriceWrap {
+    width: auto;
+    float: left;
+    text-align: right; }
+    .ty-modal-quotationList-item .ty-quotationList-PriceWrap .ty-quotePrice {
+      width: 250px; } }
+/* Quotation List --- Remove Button */
+.ty-modal-quotationList-item .ty-quotationList-wrap {
+  width: 100%;
+  float: left;
+  margin-top: 10px; }
+  .ty-modal-quotationList-item .ty-quotationList-wrap .ty-quoteRemove-btn {
+    background: none;
+    border: 2px solid #4b4a48;
+    color: #4b4a48;
+    border-bottom: none;
+    padding: 10px 100px;
+    font-weight: bold;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .ty-modal-quotationList-item .ty-quotationList-wrap .ty-quoteRemove-btn:active {
+      -webkit-transform: scale(0.8, 0.8);
+      -moz-transform: scale(0.8, 0.8);
+      -ms-transform: scale(0.8, 0.8);
+      -o-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8); }
+    .ty-modal-quotationList-item .ty-quotationList-wrap .ty-quoteRemove-btn:hover {
+      background: #4b4a48;
+      color: #000; }
+
+@media only screen and (min-width: 970px) {
+  .ty-modal-quotationList-item .ty-quotationList-wrap {
+    width: auto;
+    float: left;
+    margin-left: 20px; }
+    .ty-modal-quotationList-item .ty-quotationList-wrap .ty-quoteRemove-btn {
+      padding: 10px;
+      border: 2px solid #4b4a48;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      font-size: 2rem; }
+      .ty-modal-quotationList-item .ty-quotationList-wrap .ty-quoteRemove-btn span {
+        display: none; } }
+.ty-modal-quotationList-item .ty-quotationList-imgWrap {
+  display: none;
+  width: 100%;
+  float: left; }
+
+@media only screen and (min-width: 970px) {
+  .ty-modal-quotationList-item .ty-quotationList-imgWrap {
+    width: auto;
+    display: block; }
+    .ty-modal-quotationList-item .ty-quotationList-imgWrap .ty-quotationList-imgHolder {
+      width: 80px;
+      height: 80px;
+      background: #FFF;
+      padding: 10px; }
+      .ty-modal-quotationList-item .ty-quotationList-imgWrap .ty-quotationList-imgHolder img {
+        width: 100%;
+        height: auto; } }
+/* Quotation --- Total*/
+.ty-quotationList-totalWrap, .ty-quotationList-total {
+  width: 100%;
+  float: left; }
+
+.ty-quotationList-total span {
+  width: 100%;
+  display: inline-block;
+  color: #4b4a48;
+  font-size: 2.5em; }
+.ty-quotationList-total span.ty-total-price {
+  color: #FFF;
+  font-weight: bold; }
+  .ty-quotationList-total span.ty-total-price:after {
+    content: "LKR";
+    margin-left: 5px; }
+
+/* Quotation --- Send Email Button */
+.ty-quotationList-sendEmailBtnWrap button {
+  width: 90%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #ff9400;
+  border: none;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.6em;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer; }
+  .ty-quotationList-sendEmailBtnWrap button:hover {
+    background: #ffc700; }
+  .ty-quotationList-sendEmailBtnWrap button:active {
+    -webkit-transform: scale(0.9, 0.9);
+    -moz-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    -o-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9); }
+  @media (min-width: 768px) {
+    .ty-quotationList-sendEmailBtnWrap button {
+      width: 300px; } }
+
+/* Not --- Class */
+.ty-not {
+  background: #ff9400; }
+  .ty-not .ty-quotationList-not-icon {
+    width: 100%;
+    float: left;
+    padding: 1rem 0; }
+    @media (min-width: 960px) {
+      .ty-not .ty-quotationList-not-icon {
+        width: 80px;
+        height: 80px; } }
+    .ty-not .ty-quotationList-not-icon i {
+      color: #000;
+      font-size: 5rem; }
+  @media (min-width: 960px) {
+    .ty-not .ty-titleWrap {
+      width: 260px; } }
+  @media (min-width: 1140px) {
+    .ty-not .ty-titleWrap {
+      width: 500px; } }
+  .ty-not .ty-titleWrap h1 {
+    color: #000; }
+  .ty-not .ty-titleWrap .ty-title-specialMsg .ty-title-specialMsg-text {
+    color: #000; }
+  .ty-not .ty-qty-price-removeBtn-wrap .ty-quotationList-PriceWrap span {
+    color: #000 !important; }
+  .ty-not .ty-quoteQtyWrap .ty-qty-btn {
+    color: #000; }
+  .ty-not .ty-quoteQtyWrap .ty-qty-inputHolder span,
+  .ty-not .ty-quoteQtyWrap .ty-qty-inputHolder input {
+    color: #000; }
+  .ty-not .ty-quoteQtyWrap .ty-qty-inputHolder input {
+    border-color: #000; }
+  .ty-not .ty-quotationList-wrap .ty-quoteRemove-btn {
+    color: #000;
+    border-color: #000; }
+    .ty-not .ty-quotationList-wrap .ty-quoteRemove-btn:hover {
+      background: #000;
+      color: #ff9400; }
+
+span.ty-title-specialMsg {
+  width: 100%;
+  float: left; }
+  @media (min-width: 768px) {
+    span.ty-title-specialMsg {
+      margin-top: 10px; } }
+  span.ty-title-specialMsg span {
+    color: #ff9400;
+    font-size: 1.2em;
+    font-style: italic;
+    text-transform: uppercase; }
+  span.ty-title-specialMsg i.ty-title-specialMsgIcon {
+    width: 25px;
+    height: 25px;
+    background: #ff9400;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center; }
+    span.ty-title-specialMsg i.ty-title-specialMsgIcon.rounded {
+      border-radius: 100%; }
+    span.ty-title-specialMsg i.ty-title-specialMsgIcon i {
+      margin-top: 6px; }
+    span.ty-title-specialMsg i.ty-title-specialMsgIcon img {
+      width: 50%;
+      height: auto; }
+  span.ty-title-specialMsg span.ty-title-specialMsg-price:after {
+    content: "LKR";
+    margin-left: 5px; }
+
+/* Modal - Add Extra Item To Quote*/
+.ty-modal-add-extra-item-to-quote {
+  width: 100%;
+  float: left;
+  padding: 1rem;
+  padding-bottom: calc( 1rem + 10px );
+  border-bottom: 2px solid #4b4a48; }
+  .ty-modal-add-extra-item-to-quote button.ty-add-item-button {
+    padding: 10px 20px;
+    background-color: #ff9400;
+    border: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.6em;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer; }
+    .ty-modal-add-extra-item-to-quote button.ty-add-item-button:active {
+      -webkit-transform: scale(0.8, 0.8);
+      -moz-transform: scale(0.8, 0.8);
+      -ms-transform: scale(0.8, 0.8);
+      -o-transform: scale(0.8, 0.8);
+      transform: scale(0.8, 0.8); }
+    @media (min-width: 960px) {
+      .ty-modal-add-extra-item-to-quote button.ty-add-item-button {
+        vertical-align: middle;
+        margin-top: -5px; } }
+    .ty-modal-add-extra-item-to-quote button.ty-add-item-button:hover {
+      background-color: #ffc700; }
+
+/* Quote Select */
+select.ty-quote-select {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 1rem;
+  padding-right: 3.5rem;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(1em), calc(100% - 10px) calc(1em);
+  background-size: 10px 10px, 10px 10px;
+  background-size: 8px 8px, 8px 8px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+  @media (min-width: 960px) {
+    select.ty-quote-select {
+      width: 300px;
+      margin-bottom: 0;
+      margin-right: 1rem; } }
+  select.ty-quote-select.inactive {
+    opacity: 0.5;
+    user-select: none;
+    pointer-events: none;
+    border-color: #4b4a48;
+    color: #4b4a48; }
+  select.ty-quote-select option {
+    color: black; }
+
+/* Replace Item Wrap */
+.ty-replace-item-wrap {
+  width: 100%;
+  float: left; }
+  @media (min-width: 960px) {
+    .ty-replace-item-wrap {
+      margin-top: .8rem; } }
+  .ty-replace-item-wrap label {
+    color: #ff9400;
+    margin-bottom: 1rem; }
+    @media (min-width: 1140px) {
+      .ty-replace-item-wrap label {
+        margin-bottom: 0;
+        margin-right: 1rem; } }
+
+/* Modal Quotation List Wrap - NEW */
+.ty-modal-quotationList-wrap .ty-modal-quotationList.loading div,
+.ty-modal-quotationList-wrap .ty-modal-quotationList.loading ul {
+  opacity: 0.5;
+  pointer-events: none; }
+.ty-modal-quotationList-wrap .ty-modal-quotationList.loading .ty-modal-add-extra-item-to-quote {
+  opacity: 0.2; }
+.ty-modal-quotationList-wrap .ty-modal-quotationList.loading .ty-quotation-list-loader {
+  opacity: 1 !important; }
+  .ty-modal-quotationList-wrap .ty-modal-quotationList.loading .ty-quotation-list-loader div {
+    opacity: 1 !important; }
+
+/* Award Badge */
+.award-badge {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  z-index: 99999; }
+  @media (min-width: 960px) {
+    .award-badge {
+       position: relative;
+       display: inline; } }
+
+/* Award Sect */
+.ty-award-sect {
+  width: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 1rem; }
+  .ty-award-sect div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .ty-award-sect div {
+        flex-direction: row;
+        width: 700px;
+        text-align: left; } }
+    @media (min-width: 960px) {
+      .ty-award-sect div {
+        width: 900px;
+        justify-content: flex-start; } }
+  @media (min-width: 768px) {
+    .ty-award-sect {
+      padding: 0; } }
+  .ty-award-sect h2 {
+    color: white;
+    display: inline-block;
+    padding: 0 1rem; }
+    @media (min-width: 960px) {
+      .ty-award-sect h2 {
+        padding: 0 2rem; } }
+
+/*# sourceMappingURL=main-new.css.map */
